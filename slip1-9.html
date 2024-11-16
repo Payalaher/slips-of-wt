@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>project management</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+height:100%;
+width:100%;
+
+
+}
+
+.wrapper{
+height:100%;
+width:100%;
+display:flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+ 
+}
+
+form{
+height:60%;
+width:25%;
+background-color:aqua;
+padding:1vw 2vw;
+
+
+}
+
+label{
+font-size:1.2vw;
+font-weight: 600;
+}
+
+h1{
+text-align:center;
+ text-decoration: underline;
+}
+
+input{
+padding:.2vw;
+font-size:.9vw;
+}
+
+.btn{
+padding:.3vw .9vw;
+color:white;
+border-radius:5px;
+border:none;
+font-size:1vw;
+font-weight: 600;
+margin:0 .9vw;
+
+}
+
+.sub{
+background-color:greenyellow;
+
+}
+
+.cle{
+background-color:blueviolet;
+}
+
+.xyz{
+display:flex;
+
+align-items:center;
+justify-content:center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="wrapper">
+<form>
+
+<h1>project management</h1><br>
+
+<label>project name:</label>
+<input type="text" placeholder="enter the name"><br><br>
+
+
+<label>Assigned to:</label>
+<input type="text" placeholder="Er merry petision"><br><br>
+
+
+<label>Start Date:</label>
+<input type="date" ><br><br>
+
+<label>End Date:</label>
+<input type="date" ><br><br>
+
+<label>Priority:</label>
+<input type="radio">
+<label>High</label>
+
+<input type="radio">
+<label>Average</label>
+
+<input type="radio">
+<label>Low</label><br><br>
+
+<label>Description:</label>
+<textarea> </textarea><br><br>
+
+<div class="xyz">
+<button class="btn sub">Submit</button>
+<button class="btn cle">Clear</button>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>

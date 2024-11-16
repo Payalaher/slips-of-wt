@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tiles with Rotation</title>
+   <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.image-tile {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+
+.image-tiles {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.image-tile img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.image-tiles img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+/* Rotate clockwise on hover */
+.image-tile:hover img {
+    transform: rotate(90deg);
+}
+
+/* Rotate anticlockwise on hover */
+.image-tiles:hover img {
+    transform: rotate(-90deg);
+}
+
+</style>
+   
+</head>
+<body>
+
+<div class="container">
+    <h1>Image Tiles</h1>
+    <div class="image-grid">
+        <div class="image-tile">
+            <img src="/home/hp/Desktop/wt/bird.jpeg" alt="Image 1">
+        </div>
+        <div class="image-tile">
+            <img src="/home/hp/Desktop/wt/bird.jpeg" alt="Image 2">
+        </div>
+        <div class="image-tiles">
+            <img src="/home/hp/Desktop/wt/bird.jpeg" alt="Image 3">
+        </div>
+        <div class="image-tiles">
+            <img src="/home/hp/Desktop/wt/bird.jpeg" alt="Image 4">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
